@@ -8,7 +8,6 @@
 
 #import "MPHammingCoder.h"
 
-static MPHammingCoder *instance = nil;
 
 @implementation MPHammingCoder
 
@@ -16,7 +15,8 @@ static MPHammingCoder *instance = nil;
 
 + (instancetype)sharedInstance {
     static dispatch_once_t once;
-    
+    static MPHammingCoder *instance = nil;
+
     dispatch_once(&once, ^{
         instance = [[self alloc] initPrivate];
     });
@@ -31,7 +31,9 @@ static MPHammingCoder *instance = nil;
 #pragma mark - Coding
 
 - (void)code:(id)informVector {
-    NSLog(@"SUKA");
+    //TODO make code function
 }
+
+- ()
 
 @end

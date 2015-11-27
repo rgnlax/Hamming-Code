@@ -8,6 +8,24 @@
 
 #import "MPCommunicationChannel.h"
 
+
 @implementation MPCommunicationChannel
+
+#pragma mark - Singleton
+
++ (instancetype)sharedInstance {
+    static dispatch_once_t once;
+    static MPCommunicationChannel *instance = nil;
+    
+    dispatch_once(&once, ^{
+        instance = [[self alloc] initPrivate];
+    });
+    
+    return instance;
+}
+
+- (instancetype)initPrivate {
+    return [super init];
+}
 
 @end

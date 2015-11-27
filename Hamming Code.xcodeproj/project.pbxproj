@@ -73,8 +73,8 @@
 		B57302341C08B72800C37AC2 /* Hamming Coder */ = {
 			isa = PBXGroup;
 			children = (
-				B57302311C08B70500C37AC2 /* MPHammingCoder.m */,
 				B57302331C08B71F00C37AC2 /* MPHammingCoder.h */,
+				B57302311C08B70500C37AC2 /* MPHammingCoder.m */,
 			);
 			name = "Hamming Coder";
 			path = ..;
@@ -267,6 +267,7 @@
 				B57302301C08AF0600C37AC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
