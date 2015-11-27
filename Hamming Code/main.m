@@ -6,12 +6,13 @@
 //  Copyright © 2015 MP. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "MPHammingCoder.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        static NSString* informationVector = @"10101010100";
+        
+        [[MPHammingCoder sharedInstance]code:informationVector];
     }
     return 0;
 }

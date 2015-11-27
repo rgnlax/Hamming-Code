@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B573022B1C08AF0600C37AC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B573022A1C08AF0600C37AC2 /* main.m */; };
+		B57302321C08B70500C37AC2 /* MPHammingCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B57302311C08B70500C37AC2 /* MPHammingCoder.m */; };
+		B57302391C08B9AD00C37AC2 /* MPCommunicationChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B57302381C08B9AD00C37AC2 /* MPCommunicationChannel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		B57302271C08AF0600C37AC2 /* Hamming Code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Hamming Code"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B573022A1C08AF0600C37AC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B57302311C08B70500C37AC2 /* MPHammingCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPHammingCoder.m; path = "Hamming Code/Hamming Coder/MPHammingCoder.m"; sourceTree = "<group>"; };
+		B57302331C08B71F00C37AC2 /* MPHammingCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MPHammingCoder.h; path = "Hamming Code/Hamming Coder/MPHammingCoder.h"; sourceTree = "<group>"; };
+		B57302371C08B9AD00C37AC2 /* MPCommunicationChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPCommunicationChannel.h; path = Channel/MPCommunicationChannel.h; sourceTree = "<group>"; };
+		B57302381C08B9AD00C37AC2 /* MPCommunicationChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPCommunicationChannel.m; path = Channel/MPCommunicationChannel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,30 @@
 		B57302291C08AF0600C37AC2 /* Hamming Code */ = {
 			isa = PBXGroup;
 			children = (
+				B57302361C08B96000C37AC2 /* Channel */,
+				B57302341C08B72800C37AC2 /* Hamming Coder */,
 				B573022A1C08AF0600C37AC2 /* main.m */,
 			);
 			path = "Hamming Code";
+			sourceTree = "<group>";
+		};
+		B57302341C08B72800C37AC2 /* Hamming Coder */ = {
+			isa = PBXGroup;
+			children = (
+				B57302311C08B70500C37AC2 /* MPHammingCoder.m */,
+				B57302331C08B71F00C37AC2 /* MPHammingCoder.h */,
+			);
+			name = "Hamming Coder";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B57302361C08B96000C37AC2 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				B57302371C08B9AD00C37AC2 /* MPCommunicationChannel.h */,
+				B57302381C08B9AD00C37AC2 /* MPCommunicationChannel.m */,
+			);
+			name = Channel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +115,7 @@
 		B573021F1C08AF0600C37AC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MP;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = MP;
 				TargetAttributes = {
@@ -118,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57302391C08B9AD00C37AC2 /* MPCommunicationChannel.m in Sources */,
 				B573022B1C08AF0600C37AC2 /* main.m in Sources */,
+				B57302321C08B70500C37AC2 /* MPHammingCoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
